@@ -69,13 +69,19 @@ a {
 /* styles for navigation */
 #nav {
 	background-color: #751c54;
+ overflow: hidden;
+ width: 100%;
 }
 #nav ul {
 	list-style:none;
+ padding: 0;
+ margin: 0 auto;
+ width: 19.5 em;
 } 
 #nav ul li {
 	font-weight: normal;
     text-transform: uppercase;
+    float: left;
 }
 #nav ul a:link {
     color: #fff;
@@ -85,12 +91,21 @@ a {
   }
 #nav ul a:focus {
 	color:#FC6
+ border-color: #fff;
 }
 #nav ul a:hover {
     color: #fc6;
+    border-color: #fff;
   }
 #nav ul a:active {
 	color:#F00;
+}
+#nav ul li a {
+  display: block;
+  padding: .5em;
+  border: 1px solid #ba89a8;
+  border-radius: .5em;
+  margin: .25em;
 }
 	
 /* styles for the products section */
@@ -101,6 +116,8 @@ a {
     padding: 1.5em;
     border: double #FFBC53;
     margin: 1em;
+    clear: both;
+    overflow: hidden;
   }
 #products h2 {
   font-size: 1.2em;
