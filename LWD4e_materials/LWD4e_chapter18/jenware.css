@@ -18,6 +18,9 @@ body {
   background-color: #fdf9bd; /* Old browsers */
 }
 
+img {
+  max-width: 100%;
+}
 
 /* link styles */
 a {
